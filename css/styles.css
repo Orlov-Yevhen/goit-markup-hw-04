@@ -128,14 +128,27 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-    display: block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.header-mail-icons {
+    margin-right: 10px;
+    fill: var(--main-text-color);
 }
 
 .header-mail:hover,
 .header-mail:focus {
     color: var(--accent-color);
+}
+
+.header-mail:hover .header-mail-icons,
+.header-mail:focus .header-mail-icons {
+    fill: var(--accent-color);
 }
 
 .header-tel {
@@ -145,14 +158,27 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-    display: block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.header-tel-icons {
+    fill: var(--main-text-color);
+    margin-right: 10px;
 }
 
 .header-tel:hover,
 .header-tel:focus {
     color: var(--accent-color);
+}
+
+.header-tel:hover .header-tel-icons,
+.header-tel:focus .header-tel-icons {
+    fill: var(--accent-color);
 }
 
     
