@@ -253,8 +253,38 @@ body {
     margin-right: 30px;
 }
 
+
 .pecu-details {
     width: 270px;
+}
+
+.pecu-icon::before {
+    display: block;
+    content: '';
+    height: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pecu-details-antenna::before {
+    background-image: url("../images/antenna.svg");
+}
+
+.pecu-details-clock::before {
+    background-image: url("../images/clock.svg");
+}
+
+.pecu-details-diagram::before {
+    background-image: url("../images/diagram.svg");
+}
+
+.pecu-details-astronaut::before {
+    background-image: url("../images/astronaut.svg");
+    
 }
 
 .pecu-details:not(:last-child) {
@@ -486,6 +516,16 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    }
+    
 
 /* -----------------------LIST TWO--------------------- */
 /* -----------------------PORTFOLIO--------------------- */
