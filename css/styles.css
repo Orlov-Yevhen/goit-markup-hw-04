@@ -138,8 +138,8 @@ body {
 }
 
 .header-mail-icons {
-    margin-right: 10px;
     fill: var(--main-text-color);
+    margin-right: 10px;
 }
 
 .header-mail:hover,
@@ -451,6 +451,31 @@ body {
     color: var(--main-title-color);
     margin-bottom: 50px;
 }
+
+.clients-item {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+    border-color: var(--accent-color);
+}
+
+.clients-link {
+    margin: 0 auto;
+}
+
+.clients-link-icon {
+    fill: #AFB1B8;
+}
+
 
 /* -----------------------FOOTER--------------------- */
 
