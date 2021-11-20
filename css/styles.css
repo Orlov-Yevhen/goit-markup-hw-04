@@ -55,13 +55,14 @@ body {
 
 /* -----------------------HEADER--------------------- */
 
-.header-nav {
-    display: flex;
-    align-items: center;
-}
 
 .header-container {
     display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
 }
 
 .header-adress {
@@ -460,6 +461,11 @@ footer {
     padding-bottom: 60px;
 }
 
+.footer-container {
+    display: flex;
+    
+}
+
 .footer-logo {
     display: block;
     margin-bottom: 20px;
@@ -516,7 +522,17 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-conect {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-left: 70px;
+    
+}
+
 .footer-title {
+    margin-bottom: 20px;
+
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -525,7 +541,43 @@ footer {
     text-transform: uppercase;
     color: var(--white-color);
     }
-    
+
+
+.footer-social-list {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-item {
+    width: 44px;
+    height: 44px;
+    background-color: #43444D;
+    border-radius: 50%;
+}
+
+.footer-social-item:hover,
+.footer-social-item:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-icon {
+    fill: var(--white-color);
+}
+
+
 
 /* -----------------------LIST TWO--------------------- */
 /* -----------------------PORTFOLIO--------------------- */
