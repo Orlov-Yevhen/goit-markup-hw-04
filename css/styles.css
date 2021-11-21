@@ -218,9 +218,10 @@ body {
     padding: 10px 32px;
     font-family: inherit;
     cursor: pointer;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: 1px solid transparent;
 }
 
 .hero-btn-text {
@@ -250,7 +251,7 @@ body {
     flex-direction: row;
 }
 
-.pecu-box:not(:last-child) {
+.pecu-details:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -259,37 +260,13 @@ body {
     width: 270px;
 }
 
-.pecu-icon::before {
-    display: block;
-    content: '';
-    height: 270px;
-    height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;
+.pecu-icon-box {
+    padding: 25px;
     background-color: #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.pecu-details-antenna::before {
-    background-image: url("../images/antenna.svg");
-}
-
-.pecu-details-clock::before {
-    background-image: url("../images/clock.svg");
-}
-
-.pecu-details-diagram::before {
-    background-image: url("../images/diagram.svg");
-}
-
-.pecu-details-astronaut::before {
-    background-image: url("../images/astronaut.svg");
-    
-}
-
-.pecu-details:not(:last-child) {
-    margin-right: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .pecu-subtitle {
@@ -443,7 +420,7 @@ body {
 }
 
 .clients-title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -452,9 +429,17 @@ body {
     margin-bottom: 50px;
 }
 
+.clients-list {
+    display: flex;
+}
+
 .clients-item {
     width: 170px;
     height: 92px;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .clients-link:hover,
@@ -631,13 +616,14 @@ footer {
     cursor: pointer;
     background: #F5F4FA;
     border-radius: 4px;
+    border: 1px solid transparent;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--main-title-color);
 }
 
 .portfolio-btn:hover,
